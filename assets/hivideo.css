@@ -6,8 +6,6 @@
 .hi-video-wrapper{
     color: #fff;
     background: rgba(0, 0, 0, 0.75);
-    width: 800px;
-    height: 300px;
     position: relative;
 }
 
@@ -40,7 +38,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 10000;
+    z-index: 2147483647;
     padding: 10px 0;
 }
 
@@ -62,7 +60,7 @@
 
 .hi-video-controlbar .video-play{
     width: 5%;
-    min-width: 20px;
+    min-width: 5px;
     text-align: center;
     cursor: pointer;
     vertical-align: middle;
@@ -93,8 +91,8 @@
 }
 
 .hi-video-controlbar .video-slider{
-    width: 70%;
-    min-width: 20px;
+    width: 65%;
+    min-width: 10px;
     position: relative;
     z-index: 0;
     display: inline-block;
@@ -181,7 +179,7 @@
 
 .hi-video-controlbar .video-mute{
     width: 5%;
-    min-width: 20px;
+    min-width: 5px;
     text-align: center;
     cursor: pointer;
 }
@@ -196,12 +194,13 @@
 
 .hi-video-controlbar .video-volume{
     width: 15%;
-    min-width: 20px;
+    min-width: 10px;
+    overflow: hidden;
 }
 
 .hi-video-controlbar .video-fullscreen{
-    width: 5%;
-    min-width: 20px;
+    width: 10%;
+    min-width: 5px;
     text-align: center;
     cursor: pointer;
 }

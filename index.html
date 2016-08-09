@@ -6,14 +6,23 @@
     <link rel="stylesheet" href="assets/hivideo.css" />
     <script type="text/javascript" src="hivideo.js"></script>
     <style type="text/css">
+        .main-wrap{
+            margin: 0 auto;
+            min-width: 320px;
+            max-width: 640px;
+        }
 
+        .main-wrap video{
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-<video ishivideo="true" autoplay="true" isrotate="true" autoHide="false">
-    <source src="assets/video.mp4" type="video/mp4">
-    <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
-</video>
-
+    <div class="main-wrap">
+        <video ishivideo="true" autoplay="true" isrotate="true" autoHide="false">
+            <source src="http://www.html5videoplayer.net/videos/madagascar3.mp4" type="video/mp4">
+            <!--<source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">-->
+        </video>
+    </div>
 </body>
 </html>
