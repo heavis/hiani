@@ -17,11 +17,19 @@
     box-sizing: border-box;
 }
 
-.hi-video-wrapper video::-webkit-media-controls {
+video[ishivideo="true"]::-webkit-media-controls{
     display:none !important;
 }
 
-.hi-video-wrapper video::-webkit-media-controls-enclosure {
+video[ishivideo="true"]::-moz-media-controls{
+    display:none !important;
+}
+
+video[ishivideo="true"]::-o-media-controls{
+    display:none !important;
+}
+
+video[ishivideo="true"]::media-controls{
     display:none !important;
 }
 
