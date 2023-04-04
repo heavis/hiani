@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "module": "esnext",
+      "target": "es6",
+      "lib": ["es2018", "dom"],
+      "sourceMap": true,
+      "declaration": true,
+      "strict": true,
+      "esModuleInterop": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+  }
