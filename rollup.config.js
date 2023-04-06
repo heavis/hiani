@@ -1,7 +1,7 @@
 import typescript from 'rollup-plugin-typescript2';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import { uglify } from 'rollup-plugin-uglify';
+import { terser } from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -13,7 +13,6 @@ export default {
       format: 'iife',
       name: 'MyLibrary',
       sourcemap: true,
-      plugins: production ? [uglify()] : [],
     },
     {
       file: 'dist/hiani.esm.js',
@@ -32,6 +31,6 @@ export default {
     }),
     nodeResolve(),
     commonjs(),
-  ],
-  external: ['my-dependency'],
+    production && terser() // minify, but only in production
+  ]
 };

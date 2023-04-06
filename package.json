@@ -20,6 +20,7 @@
     "css",
     "canvas"
   ],
+  "type": "module",
   "author": "heavi",
   "license": "ISC",
   "bugs": {
@@ -27,13 +28,13 @@
   },
   "homepage": "https://github.com/heavis/hiani#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.1.0",
     "http-server": "^14.1.1",
     "rimraf": "^4.4.1",
-    "rollup": "^3.20.2",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup": "^2.36.2",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.34.1",
-    "rollup-plugin-uglify": "^6.0.4",
     "typedoc": "^0.23.28",
     "typescript": "^5.0.3"
   }
