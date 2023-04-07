@@ -1,8 +1,8 @@
 {
-  "name": "hiani.js",
+  "name": "hiani",
   "version": "1.0.0",
   "description": "hiani.js is an animation library.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "serve": "http-server demo",

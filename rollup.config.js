@@ -9,21 +9,25 @@ export default {
   input: 'src/index.ts',
   output: [
     {
-      file: 'dist/hiani.min.js',
-      format: 'iife',
-      name: 'MyLibrary',
-      sourcemap: true,
-    },
-    {
-      file: 'dist/hiani.esm.js',
-      format: 'esm',
-      sourcemap: true,
-    },
-    {
-      file: 'dist/hiani.cjs.js',
-      format: 'cjs',
-      sourcemap: true,
-    },
+      file: 'dist/index.js',
+      format: 'es',
+    }
+    // {
+    //   file: 'dist/hiani.min.js',
+    //   format: 'iife',
+    //   name: 'hiani',
+    //   sourcemap: false,
+    // },
+    // {
+    //   file: 'dist/hiani.esm.js',
+    //   format: 'esm',
+    //   sourcemap: false,
+    // },
+    // {
+    //   file: 'dist/hiani.cjs.js',
+    //   format: 'cjs',
+    //   sourcemap: false,
+    // },
   ],
   plugins: [
     typescript({
